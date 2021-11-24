@@ -58,28 +58,28 @@ export class PostComponent implements OnInit {
         text: 'Share on Twitter',
         icon: 'logo-twitter',
         handler: () => {
-          console.log('Delete clicked');
+          window.open('https://twitter.com/share?url=' + this.url, '_blank');
         }
       },
       {
         text: 'Share on Facebook',
         icon: 'logo-facebook',
         handler: () => {
-          console.log('Share clicked');
+          window.open('https://www.facebook.com/sharer/sharer.php?u=' + this.url, '_blank');
         }
       },
       {
         text: 'Share on Instagram',
         icon: 'logo-instagram',
         handler: () => {
-          console.log('Share clicked');
+          window.open('https://www.instagram.com/create/select/', '_blank');
         }
       },
       {
         text: 'Share on TikTOk',
         icon: 'logo-tiktok',
         handler: () => {
-          console.log('Share clicked');
+          window.open('https://www.tiktok.com/upload', '_blank');
         }
       },
       {
