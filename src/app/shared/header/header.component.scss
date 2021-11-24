@@ -1,0 +1,38 @@
+.insta-text {
+  font-family: "Kaushan Script", cursive;
+  font-size: 2em;
+}
+@media (max-width: 767px) {
+  .insta-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .navi-search {
+    display: none !important;
+  } 
+}
+@media (min-width: 768px) {
+  .insta-text {
+    margin-left: 10rem;
+    margin-right: unset;
+  }
+  .navi-search {
+    display: block !important;
+  }
+}
+
+.page-header{
+  z-index: 2;
+}
+.search-bar{
+  width: 15rem;
+  margin-left: 10rem;
+}
+.block-icons{
+  margin-left: 10rem;
+}
+.pe-auto{
+  cursor: pointer;
+}
+
+

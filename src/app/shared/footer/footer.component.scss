@@ -1,0 +1,17 @@
+@media (max-width: 767px) {
+    .bottom-tabs {
+        visibility: visible !important;
+    }
+}
+.bottom-tabs{
+    margin-top: 92vh;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+}
+@media (min-width:768px) {
+    .bottom-tabs {
+        visibility: hidden !important;
+    }
+}
+

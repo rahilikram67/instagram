@@ -1,0 +1,17 @@
+<ion-item lines="full" class="position-fixed top w-100 page-header">
+  <!---ion camera icon-->
+  <ion-icon name="camera" slot="start" class="d-block d-sm-none"></ion-icon>
+  <span class="insta-text">Instgram</span>
+  <ion-searchbar mode="ios" showClearButton="true" animated class="navi-search search-bar rounded">
+  </ion-searchbar>
+  <span class="mr-auto block-icons float-end navi-search">
+    <ion-icon size="large" (click)="handleClick($event)" name="home" class="pe-auto mx-3"></ion-icon>
+    <ion-icon size="large" (click)="handleClick($event)" name="send-outline" class="pe-auto mx-3"></ion-icon>
+    <ion-icon size="large" (click)="handleClick($event)" name="add-circle-outline" class="pe-auto mx-3">
+    </ion-icon>
+    <ion-icon size="large" (click)="handleClick($event)" name="compass-outline" class="pe-auto mx-3">
+    </ion-icon>
+    <ion-icon size="large" (click)="handleClick($event)" name="heart-outline" class="pe-auto mx-3"></ion-icon>
+  </span>
+  <ion-icon name="send" slot="end" class="d-block d-sm-none"></ion-icon>
+</ion-item>

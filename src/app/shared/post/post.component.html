@@ -1,0 +1,35 @@
+<ion-card class="card">
+  <ion-card-content class="post-card-content">
+    <ion-toolbar class="border-b-2">
+      <ion-avatar (click)="details()" slot="start" class="mx-2 my-2 pe-auto">
+        <ion-img [src]="thumbnail"></ion-img>
+      </ion-avatar>
+      <span (click)="details()" class="h6 fw-bold pe-auto">{{username}}</span>
+      <ion-icon (click)="handlePostClick($event)" size="large" slot="end" class="mx-2 pe-auto"
+        name="ellipsis-horizontal"></ion-icon>
+    </ion-toolbar>
+  </ion-card-content>
+  <img class="w-100 user-select-none" width="500" height="500" [src]="url" [hidden]="!url">
+  <ion-skeleton-text animated [hidden]="url" class="skelton-height"></ion-skeleton-text>
+  <ion-item lines="none">
+    <ion-icon (click)="handleLike($event)" size="large" name="heart-outline" slot="start"
+      class="mr-5 pe-auto text-black"></ion-icon>
+    <ion-icon size="large" name="chatbubble-outline" slot="start" class="mr-5 text-black pe-auto"></ion-icon>
+    <ion-icon size="large" name="send-outline" slot="start" class="text-black pe-auto"></ion-icon>
+    <ion-icon size="large" name="bookmark-outline" slot="end" class="text-black pe-auto"></ion-icon>
+  </ion-item>
+  <ion-item lines="none">
+    <span class="fw-bold mx-1 h6">Likes</span>
+    <span class="h6 text-secondary">{{likes}}</span>
+  </ion-item>
+  <ion-item lines="none">
+    <span class="fw-bold mx-1 h6">RandomUser</span>
+    <span class="h6 text-secondary">Lorem Ipsum</span>
+  </ion-item>
+  <div class="d-flex mb-1 border-top">
+    <ion-input (keyup)="inputChange($event)" placeholder="Add a comment" class="comment">
+      <ion-icon size="large" name="happy-outline" class="mx-1"></ion-icon>
+    </ion-input>
+    <ion-button fill="clear" class="fw-bolder text-primary">Post</ion-button>
+  </div>
+</ion-card>

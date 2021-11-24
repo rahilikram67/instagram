@@ -1,0 +1,11 @@
+<div class="d-block">
+  <div class="w-100 py-2 h5 text-center border-bottom">
+    Share to....
+    <ion-icon (click)="closePopover()" class="position-absolute cross my-auto pe-auto" name="close"></ion-icon>
+  </div>
+  <ion-item button lines="none" class="text-dark text-left " expand="block" fill="clear" *ngFor="let v of btns"
+    (click)="share(v.icon)">
+    <ion-icon slot="start" class="float-start" [name]="v.icon"></ion-icon>
+    {{v.text}}
+  </ion-item>
+</div>

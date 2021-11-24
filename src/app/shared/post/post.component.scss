@@ -1,0 +1,24 @@
+@media (min-width: 768px) {
+  .card {
+    margin-left: 24rem;
+    margin-right: 24rem;
+  }
+}
+.card {
+  margin-top: 4rem;
+  z-index: 1;
+  .skelton-height{
+    height: 500px;
+  }
+}
+.post-card-content {
+  padding: 0;
+  z-index: 1;
+}
+.pe-auto {
+  cursor: pointer;
+}
+.comment + ion-button {
+  visibility: hidden;
+}
+
